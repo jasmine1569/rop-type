@@ -1,0 +1,139 @@
+#modal {
+  left: 50%;
+  margin: -250px 0 0 -40%;
+  opacity: 0;
+  position: absolute;
+  top: -50%;
+  visibility: hidden;
+  width: 80%;
+  z-index:100;
+  // box-shadow: 0 3px 7px rgba(0,0,0,.25);
+  box-sizing: border-box;
+  transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  // background: #46CFB0 none repeat scroll 0% 0%;
+}
+
+.logo{
+  height: 50px;
+  width: 250px;
+}
+
+#modal:target {
+  opacity: 1;
+  top: 28%;
+  visibility: visible;
+
+   @media(min-height:480px) and (max-height: 550px)
+  {
+     top: 70%;
+  }
+
+   @media(min-height:640px) and (max-height: 800px)
+  {
+   top: 41.5%;
+  }
+
+   @media(min-height:1024px) and (max-height: 1180px)
+  {
+   top: 40%;
+  }
+
+     @media(min-height:1280px) and (max-height: 1480px)
+  {
+   top: 30%;
+  }
+
+}
+
+#modal .header, #modal .footer {
+  border-bottom: 1px solid #1ABC9C;
+  border-radius: 5px 5px 0 0;
+}
+
+#modal .footer {
+  border: none;
+  border-top: 1px solid #e7e7e7;
+  border-radius: 0 0 5px 5px;
+}
+
+#modal h2 {
+  margin: 0;
+  color: #fff;
+}
+
+#modal .btn {
+  float: right; 
+}
+ 
+#modal .copy, #modal .header, #modal .footer {
+  padding: 16px;
+  color: #fff;
+  // height: 500px;
+}
+ 
+.modal-content {
+  // background: #34BC9D;
+  position: relative;
+  z-index: 20;
+  border-radius: 5px;
+  color: #fff;
+}
+
+#modal .copy { 
+  // background: #fff;
+  height: 100%;
+}
+
+#modal .overlay {
+  background-color: #000;
+  background: rgba(0,0,0,.8);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+.close {
+  color: $grey-light;
+  // text-decoration: none;
+  // display: inline-block;
+  padding: 5px 16px;
+  // border-radius: 5px;
+  // background-color: $blue;
+  float: right;
+  // margin-top: 20px;
+  // margin-right: 5px; 
+  text-decoration: none;  
+}
+
+.close:hover,
+.close:focus {
+    color: $yellow;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+  //   body#modal{
+  //     // block scroll for mobile;
+  //     // causes underlying page to jump to top;
+  //     // prevents scrolling on all screens
+  //     overflow: hidden;
+  //     position: fixed;
+  // }
+
+// // body.viewport-lg {
+// //     // block scroll for desktop;
+// //     // will not jump to top;
+// //     // will not prevent scroll on mobile
+// //     position: absolute; 
+// // }
+
+// body {
+//     // STOP MOVING AROUND!
+//     overflow-x: hidden;
+//     overflow-y: scroll !important;
+// }
+

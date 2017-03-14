@@ -1,0 +1,167 @@
+	.sect{
+		background-color: $grey-light;
+		padding: 20px;
+	}
+
+	.alert{
+		width: 100%;
+		background-color: #fff;
+		margin: auto;
+		display: block;
+		line-height: 30px;
+
+
+	  	height:300px;
+	  	line-height: 20px;
+	  	background-color: white;
+
+		 /* #### iPhone 6 and iPhone 4+ and Nexus 5X and GalaxyS5 Portrait #### */
+		 @media screen and (min-device-width: 320px) and (orientation:portrait) and (-webkit-min-device-pixel-ratio: 2){
+		   /* some CSS here */
+		   height: 350px;
+		 }
+
+		 /* #### iPhone 6 and iPhone 4+ and Nexus 5X and GalaxyS5 Portrait or Landscape, Nexus 6P Landscape #### */
+		 @media screen and (min-device-width: 320px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2){
+		   /* some CSS here */
+		   height: 220px;
+		 }
+
+		 /* #### iPhone 5 Portrait #### */
+		 @media (device-height: 568px) and (device-width: 320px) and (orientation:portrait) and (-webkit-min-device-pixel-ratio: 2){
+		   /* some CSS here */
+		   height: 450px;
+		 }
+
+		  /* #### iPhone 5 Landscape #### */
+		 @media (device-height: 568px) and (device-width: 320px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2){
+		   /* some CSS here */
+		   height: 300px;
+		 }
+
+		 /* #### iPhone 6 plus Portrait and Nexus 6P Portrait #### */
+		 @media (min-device-height: 667px) and (min-device-width: 375px) and (orientation:portrait) and (-webkit-min-device-pixel-ratio: 3){
+		   /* some CSS here */
+		   height: 350px;
+		 }
+
+		 /* #### iPhone 6 plus Landscape and Nexus 6P Portrait #### */
+		 @media (min-device-height: 667px) and (min-device-width: 375px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 3){
+		   /* some CSS here */
+		   height: 250px;
+		 }
+
+		 /* #### Tablets Portrait #### */
+		 @media screen and (min-device-width: 768px) and (max-device-width: 1023px){
+		   /* some CSS here */
+		   height: 250px;
+		 }
+
+		 /* #### Desktops and Tablets Landscape #### */
+		 @media screen and (min-width: 1024px){
+		   /* some CSS here */
+		   height: 250px;
+		 }
+
+
+}
+
+
+
+
+
+
+		.alert-header{
+			width: 8%;
+			height: 300px;
+			background-color: $red;
+			float: left;
+
+			/* #### iPhone 6 and iPhone 4+ and Nexus 5X and GalaxyS5 Portrait #### */
+			@media screen and (min-device-width: 320px) and (orientation:portrait) and (-webkit-min-device-pixel-ratio: 2){
+			  /* some CSS here */
+			  height: 350px;
+			}
+
+			/* #### iPhone 6 and iPhone 4+ and Nexus 5X and GalaxyS5 Portrait or Landscape, Nexus 6P Landscape #### */
+			@media screen and (min-device-width: 320px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2){
+			  /* some CSS here */
+			  height: 220px;
+			}
+
+			/* #### iPhone 5 Portrait #### */
+			@media (device-height: 568px) and (device-width: 320px) and (orientation:portrait) and (-webkit-min-device-pixel-ratio: 2){
+			  /* some CSS here */
+			  height: 450px;
+			}
+
+			 /* #### iPhone 5 Landscape #### */
+			@media (device-height: 568px) and (device-width: 320px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2){
+			  /* some CSS here */
+			  height: 300px;
+			}
+
+			/* #### iPhone 6 plus Portrait and Nexus 6P Portrait #### */
+			@media (min-device-height: 667px) and (min-device-width: 375px) and (orientation:portrait) and (-webkit-min-device-pixel-ratio: 3){
+			  /* some CSS here */
+			  height: 350px;
+			}
+
+			/* #### iPhone 6 plus Landscape and Nexus 6P Portrait #### */
+			@media (min-device-height: 667px) and (min-device-width: 375px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 3){
+			  /* some CSS here */
+			  height: 250px;
+			}
+
+			/* #### Tablets Portrait #### */
+			@media screen and (min-device-width: 768px) and (max-device-width: 1023px){
+			  /* some CSS here */
+			  height: 250px;
+			}
+
+			/* #### Desktops and Tablets Landscape #### */
+			@media screen and (min-width: 1024px){
+			  /* some CSS here */
+			  height: 250px;
+			}
+
+		}
+
+
+		.alert-info{
+			width: 80%;
+			height: auto;
+			// padding: 20px;
+			margin-top: 20px;
+			margin-left: 20px;
+			float: left;
+
+
+			.alert-title{
+				margin-bottom: 0px;
+				width: 90%;
+				height: auto;
+				float: left;
+			}
+
+			.alert-copy{
+				margin-bottom: 0px;
+				margin-top: 0px;
+				width: 90%;
+				height: auto;
+				float: left;
+			}
+		}
+
+
+			.alert-view{
+				float: right;
+				padding-right: 20px;
+				text-decoration: underline;
+				// text-decoration-color: $red; 
+			}
+
+				.close{
+				float: left;
+				padding:15px;
+			}
